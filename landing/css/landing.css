@@ -1,0 +1,126 @@
+/* Landing Page - Mobile First */
+
+/* Importa las fuentes*/
+@import url("../../css/fonts.css");
+
+/* Elimina margen y establece la fuente del documento*/
+body {
+    /* Dimensiones */
+    margin: 0;
+    /* Texto */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Titulo y Cabeceras */
+header {
+    /* Dimensiones */
+    height: 600px;
+    /* Texto */
+    text-align: center;
+    color: white;
+    /* Fondo - Efecto de Scanlines sobre una imagen con degradados negros */
+    background: repeating-linear-gradient(
+        #000000A0 0px 1px,
+        #00000060 1px 2px
+        ), linear-gradient(
+            0deg, black, transparent, transparent, transparent, black
+        ), linear-gradient(
+            90deg, black, transparent, transparent, transparent, black
+        ), url("../img_landing.png") 10px -27px;
+}
+
+h1 {
+    /* Dimensiones*/
+    display: inline-block;
+    margin: 150px 10px 0;
+    /* Texto */
+    font-weight: 400;
+    font-size: 65px;
+}
+
+header > h2 {
+    /* Dimensiones */
+    margin: 20px;
+    /* Texto */
+    font-size: 30px;
+    font-weight: 300;
+}
+
+header > h2::after {
+    font-size: 40px;
+    content: "|";
+    animation: parpadeo 1s infinite;
+}
+
+/* Secciones y Articles */
+section {
+    /* Dimensiones */
+    padding: 10px;
+}
+
+section > h2 {
+    /* Texto */
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+article {
+    /* Decoracion */
+    border: solid 2px black;
+    border-radius: 5px;
+    /* Dimensiones */
+    margin: 20px auto 20px auto;
+    padding: 5px;
+    min-width: 300px;
+    height: fit-content;
+}
+
+article > a {
+    /* Decoracion*/
+    text-decoration: none;
+    background-color: #808080;
+    border-radius: 10px;
+    /* Texto */
+    color: white;
+    font-weight: 500;
+    /* Dimensiones */
+    display: inline-block;
+    margin-top: 10px;
+    padding: 13px;
+    /* Transicion */
+    transition: 0.2s;
+}
+
+article > a:hover {
+    /* Decoracion*/
+    background-color: #4040ff;
+    /* Transicion */
+    transition: 0.2s;
+}
+
+/* Clases */
+.highlight_lightgray {
+    color: #A9A9A9;
+}
+
+/* Animaciones */
+
+/* Animacion de cursor parpadeante */
+@keyframes parpadeo {
+    0% { opacity: 0; }
+    49% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+
+
+@media only screen and (min-width: 690px) {
+    article {
+        /* Dimensiones*/
+        display: inline-table;
+        margin: 10px;
+        width: 300px;
+    }
+}

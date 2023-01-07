@@ -1,0 +1,21 @@
+/* Este archivo registra todas las fuentes */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url("../recursos/fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../recursos/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url("../recursos/fonts/Roboto-Medium.ttf");
+}
