@@ -5,7 +5,7 @@ const oraciones = [
     "Pasión por la programación.",
     "Desarrollo Web.",
     "HTML, CSS y JavaScript.",
-    "Desarrollo de Videojuegos",
+    "Desarrollo de Videojuegos.",
     "Demos en SDL2.",
     "\"Tankes\" un juego Arcade Open Source. Escrito en C y reescrito en Rust.",
     "Don't have negative toughts. Remember your Mantra.",
@@ -15,6 +15,7 @@ const oraciones = [
 let intervaloID;
 let reloj = 0;
 let indice = 0;
+let mensaje_oculto = 1;
 
 const elementoHTML = document.querySelector("#custom_typer");
 
@@ -47,7 +48,7 @@ function borra() {
     }
     else {
         // Cambia indice que apunte a la siguiente oracion
-        if (++indice >= oraciones.length - 1) {
+        if (++indice >= oraciones.length - mensaje_oculto) {
             indice = 0;
         }
         // Cambia el intervalo

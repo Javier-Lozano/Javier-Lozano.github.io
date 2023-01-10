@@ -14,7 +14,8 @@ body {
 /* Titulo y Cabeceras */
 header {
     /* Dimensiones */
-    height: 600px;
+    height: 100vh;
+    min-height: 400px;
     /* Texto */
     text-align: center;
     color: white;
@@ -67,7 +68,7 @@ section > h2 {
 
 article {
     /* Decoracion */
-    border: solid 2px black;
+    border: solid 2px #808080;
     border-radius: 5px;
     /* Dimensiones */
     margin: 20px auto 20px auto;
@@ -80,7 +81,6 @@ article > a {
     /* Decoracion*/
     text-decoration: none;
     background-color: #808080;
-    border-radius: 10px;
     /* Texto */
     color: white;
     font-weight: 500;
@@ -98,7 +98,11 @@ article > a:hover {
     /* Transicion */
     transition: 0.2s;
 }
-
+article > img {
+        width: 350px;
+        object-fit: none;
+        object-position: 0 0;
+    }
 /* Clases */
 .highlight_lightgray {
     color: #A9A9A9;
@@ -114,13 +118,18 @@ article > a:hover {
     100% { opacity: 1; }
 }
 
-
+/* Pantallas Grandes*/
 
 @media only screen and (min-width: 690px) {
     article {
         /* Dimensiones*/
-        display: inline-table;
         margin: 10px;
-        width: 300px;
+        width: 350px;
+    }
+
+    .article_container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }
