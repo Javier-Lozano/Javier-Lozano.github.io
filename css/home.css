@@ -1,23 +1,13 @@
-/* Landing Page - Mobile First */
-
-/* Importa las fuentes*/
-@import url("../../css/fonts.css");
-
-/* Elimina margen y establece la fuente del documento*/
-body {
-    /* Dimensiones */
-    margin: 0;
-    /* Texto */
-    font-family: 'Roboto', sans-serif;
-}
+/* HOME - Mobile First */
 
 /* Titulo y Cabeceras */
 header {
     /* Dimensiones */
+    display: inline-block;
+    width: 100%;
     height: 100vh;
     min-height: 400px;
     /* Texto */
-    text-align: center;
     color: white;
     /* Fondo - Efecto de Scanlines sobre una imagen con degradados negros */
     background: repeating-linear-gradient(
@@ -27,24 +17,19 @@ header {
             0deg, black, transparent, transparent, transparent, black
         ), linear-gradient(
             90deg, black, transparent, transparent, transparent, black
-        ), url("../img_landing.png") 10px -27px;
+        ), url("../recursos/img/home_1.png") 10px -27px;
 }
 
 h1 {
-    /* Dimensiones*/
-    display: inline-block;
-    margin: 150px 10px 0;
+    /* Margen: Arriba | Horizontal | Abajo */
+    margin: 150px 0 0;
     /* Texto */
-    font-weight: 400;
-    font-size: 65px;
+    text-align: center;
 }
 
-header > h2 {
-    /* Dimensiones */
-    margin: 20px;
+h2 {
     /* Texto */
-    font-size: 30px;
-    font-weight: 300;
+    text-align: center;
 }
 
 header > h2::after {
@@ -54,25 +39,15 @@ header > h2::after {
 }
 
 /* Secciones y Articles */
-section {
-    /* Dimensiones */
-    padding: 10px;
-}
 
-section > h2 {
-    /* Texto */
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-}
 
 article {
-    /* Decoracion */
-    border: solid 2px #808080;
-    border-radius: 5px;
+    
     /* Dimensiones */
-    margin: 20px auto 20px auto;
-    padding: 5px;
+    /* Margin: Arriba | Derecha | Abajo | Izquierda*/
+    /*margin: 20px auto 20px auto;*/
+    /* Margin: Vertical | Horizontal */
+    margin: 20px auto;
     min-width: 300px;
     height: fit-content;
 }
@@ -98,14 +73,11 @@ article > a:hover {
     /* Transicion */
     transition: 0.2s;
 }
+
 article > img {
         width: 350px;
         object-fit: none;
         object-position: 0 0;
-    }
-/* Clases */
-.highlight_lightgray {
-    color: #A9A9A9;
 }
 
 /* Animaciones */
@@ -118,9 +90,9 @@ article > img {
     100% { opacity: 1; }
 }
 
-/* Pantallas Grandes*/
+/* Pantallas de 790px de Ancho o Superiores*/
 
-@media only screen and (min-width: 690px) {
+@media only screen and (min-width: 790px) {
     article {
         /* Dimensiones*/
         margin: 10px;

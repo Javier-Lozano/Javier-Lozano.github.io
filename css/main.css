@@ -1,0 +1,45 @@
+/* Diseño General de las Paginas */
+
+/* Importa las fuentes*/
+@import url("fonts.css");
+
+/* Elimina margen del elemento "body" y establece la fuente del documento */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Elementos de Cabecera */
+
+h1 {
+    font-weight: 400;
+    font-size: 65px;
+}
+
+h2 {
+    /* Texto */
+    font-weight: 300;
+    font-size: 30px;
+}
+
+/* Section - Article*/
+
+section {
+    /* Dimensiones */
+    padding: 10px;
+}
+
+article {
+    /* Decoracion */
+    border: solid 2px #808080;
+    border-radius: 5px;
+    /* Dimensiones */
+    padding: 5px;
+}
+
+/* Clases */
+
+/* Resaltado de Texto */
+.hl_black {
+    font-weight: 500;
+}
